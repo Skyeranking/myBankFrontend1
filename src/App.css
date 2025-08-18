@@ -1,0 +1,311 @@
+/* Base Styles */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.login-title {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #555555;
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4CAF50;
+}
+
+.login-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.login-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #3d8b40;
+}
+
+.footer-divider {
+  color: #cccccc;
+}
+
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+  }
+  
+  .input-group input {
+    padding: 10px;
+  }
+  
+  .login-button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .login-footer {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .footer-divider {
+    display: none;
+  }
+}
+
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  background-color: #1a237e;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-right {
+  flex: 1;
+}
+
+.transaction-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.account-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.info-label {
+  font-weight: bold;
+}
+
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.btn-deposit {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-withdraw {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-send {
+  background-color: #2196f3;
+  color: white;
+}
+
+
+.transaction-history {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.transactions-list {
+  margin-top: 15px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-date {
+  color: #666;
+  width: 100px;
+}
+
+.transaction-description {
+  flex: 1;
+}
+
+.transaction-amount {
+  width: 100px;
+  text-align: right;
+}
+
+.credit {
+  color: #4caf50;
+}
+
+.debit {
+  color: #f44336;
+}
+
+
+@media (min-width: 768px) {
+  .dashboard-content {
+    flex-direction: row;
+  }
+  
+  .dashboard-left {
+    width: 60%;
+  }
+  
+  .dashboard-right {
+    width: 40%;
+  }
+  
+  .transaction-forms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .form-container:nth-child(3) {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .transaction-forms {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .form-container:nth-child(3) {
+    grid-column: span 1;
+  }
+}
