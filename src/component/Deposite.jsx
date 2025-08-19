@@ -19,7 +19,7 @@ const Deposite = ({onDeposit}) => {
 
         try {
             const response = await axios.post(
-                'http://localhost:5000/user/deposit',
+                'https://mybankbackend1.onrender.com/user/deposit',
                 { amount: parseFloat(amount) },
                 {
                     headers: {

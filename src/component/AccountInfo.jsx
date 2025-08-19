@@ -15,7 +15,7 @@ const AccountInfo = ({ reloadFlag }) => {
     useEffect(() => {
         const fetchAccount = async () => {
             try {
-                let response = await axios.get(`http://localhost:5000/user/allUser/${id}`, {
+                let response = await axios.get(`https://mybankbackend1.onrender.com/user/allUser/${id}`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                         "Content-Type": "application/json",

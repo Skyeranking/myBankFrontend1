@@ -23,7 +23,7 @@ const SendMoney = () => {
             setResolving(true);
             try {
                 const response = await axios.post(
-                    'http://localhost:5000/user/resolve',
+                    'https://mybankbackend1.onrender.com/user/resolve',
                     { accountnum: recipientAccount },
                     {
                         headers: {

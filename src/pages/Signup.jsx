@@ -26,7 +26,7 @@ const Signup = () => {
 
             try {
                 const response = await axios.post(
-                    'http://localhost:5000/user/signup',
+                    'https://mybankbackend1.onrender.com/user/signup',
                     {
                         firstName: values.firstName,
                         lastName: values.lastName,

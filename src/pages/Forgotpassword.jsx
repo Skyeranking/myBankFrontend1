@@ -14,7 +14,7 @@ const Forgotpassword = () => {
       try {
         console.log('Submitting email:', values.email);
 
-        const response = await axios.post('http://localhost:5000/user/requestOtp', {
+        const response = await axios.post('https://mybankbackend1.onrender.com/user/requestOtp', {
           email: values.email
         });
 

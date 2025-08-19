@@ -21,7 +21,7 @@ const Resetpassword = () => {
       }
 
       try {
-        const res = await axios.post('http://localhost:5000/user/forgotPassword', {
+        const res = await axios.post('https://mybankbackend1.onrender.com/user/forgotPassword', {
           email: email.trim(),
           otp: values.otp.trim(),
           newPassword: values.newPassword.trim()

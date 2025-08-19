@@ -17,7 +17,7 @@ const Login = () => {
                 setisloading(true); 
                 console.log(values);
 
-                const response = await axios.post('http://localhost:5000/user/login', values);
+                const response = await axios.post('https://mybankbackend1.onrender.com/user/login', values);
 
                 if (response?.data?.status) {
                     localStorage.setItem("token", response.data.token);
