@@ -62,7 +62,7 @@ const SendMoney = () => {
         try {
             setIsLoading(true);
             const response = await axios.post(
-                'http://localhost:5000/user/transfer',
+                'https://mybankbackend1.onrender.com/user/transfer',
                 { recipientAccount, amount },
                 {
                     headers: {
